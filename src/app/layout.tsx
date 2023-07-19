@@ -1,6 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { ClerkProvider } from '@clerk/nextjs';
+import Navbar from '../../components/Navbar';
+// import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
    title: 'Pickup Soccer Project',
@@ -16,7 +18,11 @@ export default function RootLayout({
    return (
       <ClerkProvider>
          <html lang="en">
-            <body>{children}</body>
+            <body className="w-screen h-screen">
+               <Navbar />
+               {children}
+               {/* <Footer /> */}
+            </body>
          </html>
       </ClerkProvider>
    );
