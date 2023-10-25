@@ -21,7 +21,6 @@ export default function RootLayout({
             <body className="w-screen h-screen">
                <Navbar />
                {children}
-               {/* <Footer /> */}
             </body>
          </html>
       </ClerkProvider>
