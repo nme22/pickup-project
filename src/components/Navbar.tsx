@@ -1,7 +1,6 @@
-import Link from 'next/link';
-
 export default function Navbar() {
-   // if user is not logged in
+   // In case the user signs out while on the page.
+
    return (
       <nav className="flex justify-around p-2 font-semibold text-white underline">
          <a
@@ -20,7 +19,7 @@ export default function Navbar() {
             href="/sign-up"
             className="rounded bg-gradient-to-l hover:from-emerald-400 hover:to-blue-400"
          >
-            Register
+            Sign Up
          </a>
       </nav>
    );
