@@ -9,6 +9,9 @@ module.exports = {
          backgroundImage: {
             'soccer-field': 'url(../../public/Soccer_Field_Transparant.svg)',
          },
+         container: {
+            center: true,
+         },
       },
    },
    plugins: [],

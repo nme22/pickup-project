@@ -1,16 +1,11 @@
 'use client';
 import Link from 'next/link';
-import { useAuth, useUser } from '@clerk/nextjs';
 
 export default function Home() {
-   const { isLoaded, isSignedIn, user } = useUser();
-
    return (
       <main className="flex-col rounded-lg">
          <div className="flex-col content-center p-12 text-center h-fit w-400px">
-            <h1 className="text-2xl text-white">
-               Welcome to SJ Pickup {user?.username}
-            </h1>
+            <h1 className="text-2xl text-white">Welcome to SJ Pickup</h1>
             <p className="text-2xl text-white">
                An app designed to help organize pickup soccer games!
             </p>
