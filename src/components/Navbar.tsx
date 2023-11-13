@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { auth, UserButton } from '@clerk/nextjs';
+import { auth, UserButton, SignOutButton } from '@clerk/nextjs';
 
 export default function Navbar() {
    const { userId } = auth();
@@ -39,6 +39,7 @@ export default function Navbar() {
                         Profile
                      </Link>
                   )}
+
                   <UserButton afterSignOutUrl="/" />
                </div>
             </div>
